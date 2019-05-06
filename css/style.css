@@ -18,6 +18,10 @@ main{
   flex-direction: column;
   justify-content: center;
 }
+.active{
+  background: #fff;
+  border-top-right-radius: 5px;
+}
 .tabs{
   width: 485px;
   margin: 0 auto;
@@ -29,7 +33,6 @@ main{
   width: 100px;
   display: inline;
   color:#7B7B7B;
-  border-right: 2px solid #b8b8b8;
   padding: 12px 20px;
   font-size: 18px;
   font-weight: 400;
@@ -48,6 +51,9 @@ main{
   justify-content: center;
   height: 50%;
 
+}
+#tab1, #tab2{
+  transition: all 0.4s;
 }
 .card{
   position: relative;
@@ -77,10 +83,8 @@ main{
   font-weight: 600;
   margin: 0 0 10px 40px;
 }
-#cookie-consent{
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+.btn{
+
   height: 38px;
   width: 100px;
   background: #00CE9B;
@@ -89,9 +93,15 @@ main{
   box-shadow: none;
   transition: all 0.2s;
 }
-#cookie-consent:hover{
+.btn:hover{
   cursor: pointer;
   box-shadow: 1px 1px 1px grey;
+}
+#cookie-consent{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
 }
 #triangle{
   width: 34px;
@@ -112,6 +122,36 @@ main{
   width: 12px;
   transform: rotate(180deg);
 }
+#login{
+  display: none;
+}
+input{
+  padding: 3px 0 3px 40px;
+  width: 60%;
+  line-height: 38px;
+  border:none;
+}
+
+#user[type=text] {
+
+  background-color: #e1e1e1;
+  background-image: url('../images/user-light.svg') no-repeat;
+  background-size: 26px;
+  background-position: 5px center;
+}
+#pass{
+  background-color: #e1e1e1;
+  background-image: url('../images/key-light.svg') no-repeat;
+  background-size: 26px;
+  background-position: 5px center;
+}
+#mail{
+  background-color: #e1e1e1;
+  background-image: url('../images/envelope-light.svg') no-repeat;
+  background-size: 26px;
+  background-position: 5px center;
+}
+
 #nemId{
   display: flex;
   flex-direction: row;
@@ -193,16 +233,24 @@ li{
   main, .cards{
     display: block;
   }
-
-  .card, .logo-card, .tabs{
+#card1, #card2{
+  height: auto;
+  text-align: center;
+}
+.tabs{
+  width: 96%;
+  margin-left: 2%;
+}
+  .card, .logo-card{
     flex-direction: column;
     width: 96%;
     margin-left: 2%;
   }
 
-  #nemId, .content{
+  #nemId, .content, .logo-header{
     width: 100%;
     display: block;
+    margin-top: 10px;
   }
   .small-card{
     width: 100%;
