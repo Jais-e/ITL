@@ -52,7 +52,7 @@ document.querySelector("#tab2").onclick = function(){
 //Cookie tabs functions
 document.querySelector("#cookie-tab1").onclick = function(){
   activeCookieTab();
-  document.querySelector("#cookie-tab1").style.borderTopLeftRadius ="5px";
+  
   document.querySelector("#about").style.display = "block";
   document.querySelector("#declaration").style.display = "none";
 };

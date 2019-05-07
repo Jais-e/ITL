@@ -18,10 +18,7 @@ main{
   flex-direction: column;
   justify-content: center;
 }
-.active{
-  background: #fff;
-  border-top-right-radius: 5px;
-}
+
 
 .tabs{
   width: 485px;
@@ -29,8 +26,6 @@ main{
   height: 46px;
   background: rgba(255, 255, 255, .5)
 }
-
-
 .tab{
   width: 100px;
   display: inline;
@@ -88,16 +83,15 @@ main{
 .cookie-tabs{
   width: 90%;
   margin: 0 auto;
-  height: 26px;
-
+  line-height:32px;
+  background: #E1E1E1;
 }
 #cookie-tab1, #cookie-tab2{
-  background: #E1E1E1;
   color:#7B7B7B;
   font-weight: bold;
   height: 30px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   padding: 8px;
 }
 .cookie-content{
@@ -107,6 +101,10 @@ main{
   color:#7B7B7B;
   background: #F6F5F5;
   overflow-y: scroll;
+}
+.active{
+  background: #fff;
+  border-top-right-radius: 5px;
 }
 .active2{
   background: #F6F5F5;
